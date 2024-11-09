@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Faculty+Glyphic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +41,22 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.main-body{
+  background: linear-gradient(to right, rgb(196, 196, 217), rgb(230, 210, 213));
+}
+
+.head-contain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.head{
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.85;
+  font-size: 120%;
 }
