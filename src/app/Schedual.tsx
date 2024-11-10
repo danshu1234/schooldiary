@@ -1,4 +1,4 @@
-
+import './schedual.css'
 import Link from "next/link"
 import { FC } from "react"
 
@@ -6,47 +6,57 @@ import { FC } from "react"
 const DaySched: FC = () => {
 
     const monday = localStorage.getItem('monday-lessons')
-    const tuesday = localStorage.getItem('monday-lessons')
-    const wednesday = localStorage.getItem('monday-lessons')
-    const thursday = localStorage.getItem('monday-lessons')
-    const friday = localStorage.getItem('monday-lessons')
+    const tuesday = localStorage.getItem('tuesday-lessons')
+    const wednesday = localStorage.getItem('wednesday-lessons')
+    const thursday = localStorage.getItem('thursday-lessons')
+    const friday = localStorage.getItem('friday-lessons')
 
     return (
-        <div>
-            <h2>Monday</h2>
-            <ul>
+        <div className="schedual-contain">
+            <div className='day-contain'>
+            <h2 className='day'>Monday</h2>
+            <ul className='lessons-list'>
             {monday? (
-                JSON.parse(monday).map((item: string, index: any) => <li key={index}><Link href={`/${item}`}>{item}</Link></li>)
+                JSON.parse(monday).map((item: string, index: any) => <li key={index} className='lesson'><Link href={`/${item}`}>{item}</Link></li>)
             ) : null}
             </ul>
-            
-            <h2>Tuesday</h2>
-            <ul>
+            </div>
+
+            <div className='day-contain'>
+            <h2 className='day'>Tuesday</h2>
+            <ul className='lessons-list'>
             {tuesday? (
-                JSON.parse(tuesday).map((item: string, index: any) => <li key={index}><Link href={`/${item}`}>{item}</Link></li>)
+                JSON.parse(tuesday).map((item: string, index: any) => <li key={index} className='lesson'><Link href={`/${item}`}>{item}</Link></li>)
             ) : null}
             </ul>
+            </div>
 
-            <h2>Wednesday</h2>
-            <ul>
+            <div className='day-contain'>
+            <h2 className='day'>Wednesday</h2>
+            <ul className='lessons-list'>
             {wednesday? (
-                JSON.parse(wednesday).map((item: string, index: any) => <li key={index}><Link href={`/${item}`}>{item}</Link></li>)
+                JSON.parse(wednesday).map((item: string, index: any) => <li key={index} className='lesson'><Link href={`/${item}`}>{item}</Link></li>)
             ) : null}
             </ul>
+            </div>
 
-            <h2>Thursday</h2>
-            <ul>
+            <div className='day-contain'>
+            <h2 className='day'>Thursday</h2>
+            <ul className='lessons-list'>
             {thursday? (
-                JSON.parse(thursday).map((item: string, index: any) => <li key={index}><Link href={`/${item}`}>{item}</Link></li>)
+                JSON.parse(thursday).map((item: string, index: any) => <li key={index} className='lesson'><Link href={`/${item}`}>{item}</Link></li>)
             ) : null}
             </ul>
+            </div>
 
-            <h2>Friday</h2>
-            <ul>
+            <div className='day-contain'>
+            <h2 className='day'>Friday</h2>
+            <ul className='lessons-list'>
             {friday? (
-                JSON.parse(friday).map((item: string, index: any) => <li key={index}><Link href={`/${item}`}>{item}</Link></li>)
+                JSON.parse(friday).map((item: string, index: any) => <li key={index} className='lesson'><Link href={`/${item}`}>{item}</Link></li>)
             ) : null}
             </ul>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Faculty+Glyphic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Oswald:wght@200..700&family=Pattaya&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.homeworks-main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.lesson-name {
+    margin-top: 80px;
+    text-align: center; 
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.9;
+}
+
+.input-container {
+    position: relative;
+    left: 7%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 120px; 
+    width: 100%; 
+}
+
+input[type="text"], input[type="file"], button {
+    margin: 0 5px;
+    width: auto; 
+}
+
+.add-homework{
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    font-size: 110%;
+    border-radius: 10px;
+}
+
+.nothing{
+    margin-top: 50px;
+    opacity: 0.7;
+}
+
+.li-homework {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    max-width: 400px;
+    margin-top: 30px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.homework-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.delete-homework {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: rgb(241, 227, 227);
+    border-radius: 5px;
+}
+
+
+.agree-delete-all{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 460px;
+    height: 60px;
+    background-color: rgb(65, 65, 174);
+    color: aqua;
+    padding-left: 4px;
+    border-radius: 10px;
+}
+
+.agree-btn{
+    cursor: pointer;
+}
+
+.mini-img{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.big-img{
+    position: fixed;
+    left: 10px;
+    top: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.close-photo{
+    position: fixed;
+    left: 420px;
+    top: 200px;
+    cursor: pointer;
+}
+
+.add-photo-button {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+}
+
+.add-photo-button:hover {
+    background-color: #0056b3; 
+}
+
+.save-homework{
+    height: 35px;
+    width: 90px;
+    background-color: #007bff;
+    border-radius: 4px; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border: none;
+}
+
+.save-homework:hover{
+    background-color: #0056b3; 
+}
+
+.clear-homework{
+    position: absolute;
+    right: 20%;
+    height: 35px;
+    width: 90px;
+    background-color: #ff0037;
+    border-radius: 4px; 
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.ok{
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+

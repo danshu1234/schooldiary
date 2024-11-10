@@ -1,5 +1,67 @@
-.initial-list{
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Faculty+Glyphic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.initial-contain {
     display: flex;
-    flex-direction: row;
-    list-style: none;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    padding: 20px; 
+    overflow: hidden; 
 }
+
+
+.dayOfTheWeek,
+.wednesday,
+.friday,
+.thursday {
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.8;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.start {
+    opacity: 0.8;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.input-start {
+    height: 30px;
+    width: 180px; 
+    margin-top: 10px; 
+    opacity: 0.4;
+    border-radius: 10px;
+    font-size: 120%;
+    box-sizing: border-box; 
+}
+
+.save-schedule {
+    width: 80%; 
+    max-width: 150px;
+    height: 30px;
+    font-size: 120%;
+    background-color: rgb(213,203,214);
+    border: none;
+    cursor: pointer;
+    opacity: 0.75;
+    margin-top: 15px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.instruction {
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-size: 90%;
+}
+
