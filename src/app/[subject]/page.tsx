@@ -1,16 +1,18 @@
-import { FC } from "react";
-import Homeworks from "./Homeworks";
+import { FC } from "react"; 
+import Homeworks from "./Homeworks"; 
 
-interface Props {
-    params: {
-        subject: string
-    }
-}
+interface Params { 
+    subject: string; 
+} 
 
-const DayHomework: FC <Props> = ({params}) => {
-    return (
-        <Homeworks params = {params.subject}/>
-    )
-}
+interface Props { 
+    params: Params; 
+} 
 
-export default DayHomework
+const DayHomework: FC<Props> = ({ params }) => { 
+    return ( 
+        <Homeworks params={params.subject} /> 
+    ); 
+}; 
+
+export default DayHomework;
