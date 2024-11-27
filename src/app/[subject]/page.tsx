@@ -1,5 +1,6 @@
 import { FC } from "react"; 
 import Homeworks from "./Homeworks"; 
+import { PageProps } from "../../../.next/types/app/layout";
 
 interface Params { 
     subject: string; 
