@@ -1,19 +1,14 @@
-import { FC } from "react"; 
-import Homeworks from "./Homeworks"; 
-import { PageProps } from "../../../.next/types/app/layout";
+import { FC } from "react";  
+import Homeworks from "./Homeworks";  
 
-interface Params { 
-    subject: string; 
-} 
+interface Params {  
+    subject: string;  
+}  
 
-interface Props { 
-    params: Params; 
-} 
-
-const DayHomework: FC<Props> = ({ params }) => { 
-    return ( 
-        <Homeworks params={params.subject} /> 
-    ); 
-}; 
+const DayHomework: FC<{ params: Params }> = ({ params }) => {  
+    return (  
+        <Homeworks params={params.subject} />  
+    );  
+};  
 
 export default DayHomework;
